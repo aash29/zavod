@@ -16,13 +16,13 @@ onready var player_tile = Vector2(3, 3)
 func _input(event):
 	if !event.is_pressed():
 		return
-	if event.is_action("Left"):
+	if event.is_action("ui_left"):
 		try_move(-1,0)
-	if event.is_action("Right"):
+	if event.is_action("ui_right"):
 		try_move(1,0)
-	if event.is_action("Up"):
+	if event.is_action("ui_up"):
 		try_move(0,-1)
-	if event.is_action("Down"):
+	if event.is_action("ui_down"):
 		try_move(0,1)
 			
 func try_move(dx,dy):
